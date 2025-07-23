@@ -1,0 +1,15 @@
+# LaTeX auxiliary files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+
+# Keep PDFs in versions/ but ignore build PDFs
+main.pdf
+*.pdf
+!versions/*.pdf

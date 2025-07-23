@@ -1,0 +1,54 @@
+\documentclass[11pt]{article}
+\setlength{\parindent}{0pt}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\usepackage{amsmath}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue
+}
+\usepackage{array}
+
+
+\begin{document}
+
+\input{sections/1.- personal_information}
+
+\noindent
+\makebox[0pt][l]{\hspace*{-1.06cm}\rule{\paperwidth}{0.4pt}}
+\vspace{6pt}
+
+\input{sections/2.- summary}
+
+\vspace{6pt}
+\input{sections/3.- education}
+
+\vspace{6pt}
+% \input{sections/4.- professional_experience}
+\input{sections/4.- publications}
+
+\vspace{6pt}
+% \input{sections/5.- research_experience}
+% \input{sections/4.- research_experience}
+\input{sections/5.- research_experience}
+
+\vspace{6pt}
+% \input{sections/6.- publications}
+\input{sections/6.- professional_experience}
+
+\vspace{6pt}
+\input{sections/7.- technical_skills}
+
+\vspace{6pt}
+\input{sections/8.- languages}
+
+\vspace{6pt}
+\input{sections/9.- extra}
+
+\end{document}
