@@ -1,54 +1,76 @@
+% Resume Template - Jesus Alan Hernandez Galvan
+
 \documentclass[11pt]{article}
-\setlength{\parindent}{0pt}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
-\usepackage{lipsum}
-\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
-\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage[a4paper, top=1.5cm, bottom=1.5cm, left=1cm, right=1cm]{geometry}
+
+
+% \usepackage{crimson}  % Crimson Text
+% \usepackage[default]{sourcesanspro}
+% \usepackage{libertinus}
+
+\usepackage{charter}
+
+
+
+\definecolor{darktext}{RGB}{31, 41, 55}       % #1F2937 - Texto principal
+\definecolor{mediumgray}{RGB}{55, 65, 81}     % #374151 - Subtítulos
+\definecolor{lightgray}{RGB}{120, 124, 138}   % #787C8A - Info secundaria (más oscuro que antes)
+\definecolor{linkblue}{RGB}{59, 130, 246}     % #3B82F6 - Links
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[L]{\textcolor{lightgray}{\thepage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
 \hypersetup{
     colorlinks=true,
-    urlcolor=blue
+    urlcolor=linkblue,
+    linkcolor=linkblue,
+    pdftitle={Jesus Alan Hernandez Galvan - Resume},
+    pdfauthor={Jesus Alan Hernandez Galvan},
 }
-\usepackage{array}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.8em}
+
+\newcommand{\sectionline}{\noindent \makebox[0pt][l]{\hspace*{-2.5cm}\rule{\paperwidth}{0.4pt}}}
 
 
 \begin{document}
 
 \input{sections/1.- personal_information}
-
-\noindent
-\makebox[0pt][l]{\hspace*{-1.06cm}\rule{\paperwidth}{0.4pt}}
-\vspace{6pt}
+\vspace{2pt}
+\textcolor{lightgray}{\rule{\textwidth}{0.15pt}}
+\vspace{2pt}
 
 \input{sections/2.- summary}
 
-\vspace{6pt}
 \input{sections/3.- education}
 
-\vspace{6pt}
-% \input{sections/4.- professional_experience}
 \input{sections/4.- publications}
 
-\vspace{6pt}
-% \input{sections/5.- research_experience}
-% \input{sections/4.- research_experience}
 \input{sections/5.- research_experience}
 
-\vspace{6pt}
-% \input{sections/6.- publications}
 \input{sections/6.- professional_experience}
 
-\vspace{6pt}
 \input{sections/7.- technical_skills}
 
-\vspace{6pt}
 \input{sections/8.- languages}
 
-\vspace{6pt}
 \input{sections/9.- extra}
 
 \end{document}
